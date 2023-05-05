@@ -942,7 +942,6 @@ class PlayState extends MusicBeatState
 				{
 					marioPos.y = groundPos - 6;
 					marioVelocity = -800;
-					boyfriend.playAnim("jump");
 				}
 				else
 				{

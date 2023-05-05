@@ -289,7 +289,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				backgroundsArray['popup'] = popup;
 				foreground.add(popup);
 				
-				chaseBG = new FNFSprite(-956.95 * 6, 0).loadGraphic(Paths.image('backgrounds/' + curStage + '/loop'), false, 160, 81);
+				chaseBG = new FNFSprite(-956.95 * 6, 50).loadGraphic(Paths.image('backgrounds/' + curStage + '/loop'), false, 160, 81);
 				chaseBG.scrollFactor.set(1, 1);
 				chaseBG.antialiasing = false;
 				chaseBG.setGraphicSize(Std.int(chaseBG.width * 6));
