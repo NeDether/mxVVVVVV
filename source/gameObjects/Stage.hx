@@ -711,8 +711,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 							if (chaseBG.x == bfJumpGap1[i] && !jumpedGap1)
 							{
 								jumpedGap1 = true;
-								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 6) }, 0.5, {ease: FlxEase.sineOut});
-								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 6)}, 0.5, {ease: FlxEase.sineOut});
+								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 13) }, 0.5, {ease: FlxEase.sineOut});
+								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 13)}, 0.5, {ease: FlxEase.sineOut});
 								boyfriend.flipY = true;
 								legsBF.flipY = true;
 							
@@ -726,8 +726,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 								jumpedGap2 = true;
 								legsBF.animation.play('jump'+legsPrefix, true);
 
-								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 6) }, 0.0001, {ease: FlxEase.sineOut, onComplete: bfFallFast});
-								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 6)}, 0.0001, {ease: FlxEase.sineOut, onComplete: legsFallFast});
+								FlxTween.tween(bfPos, { y: (bfTarget.y) }, 0.0001, {ease: FlxEase.sineOut, onComplete: jumpFallBF});
+								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y)}, 0.0001, {ease: FlxEase.sineOut, onComplete: jumpFalllegsBF});
 								boyfriend.isJumping = true;
 								boyfriend.flipY = false;
 								legsBF.flipY = false;
