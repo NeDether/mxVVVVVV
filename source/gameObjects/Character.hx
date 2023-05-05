@@ -221,7 +221,6 @@ class Character extends FNFSprite
 			case 'bf-chase':
 				frames = Paths.getSparrowAtlas('characters/bf-chase');
 				animation.addByPrefix('idle', 'idle', 30, true);
-				animation.addByPrefix('jump', 'jump', 30, true);
 				animation.addByPrefix('singUP', 'up0', 30, false);
 				animation.addByPrefix('singLEFT', 'left0', 30, false);
 				animation.addByPrefix('singRIGHT', 'right0', 30, false);
@@ -245,7 +244,6 @@ class Character extends FNFSprite
 			case 'bf-chase-small':
 				frames = Paths.getSparrowAtlas('characters/bf-chase-small');
 				animation.addByPrefix('idle', 'idle', 30, true);
-				animation.addByPrefix('jump', 'jump', 30, true);
 				animation.addByPrefix('singUP', 'up0', 30, false);
 				animation.addByPrefix('singLEFT', 'left0', 30, false);
 				animation.addByPrefix('singRIGHT', 'right0', 30, false);
@@ -270,7 +268,6 @@ class Character extends FNFSprite
 			case 'bf-chase-fire':
 				frames = Paths.getSparrowAtlas('characters/bf-chase-fire');
 				animation.addByPrefix('idle', 'idle', 30, true);
-				animation.addByPrefix('jump', 'jump', 30, true);
 				animation.addByPrefix('singUP', 'up0', 30, false);
 				animation.addByPrefix('singLEFT', 'left0', 30, false);
 				animation.addByPrefix('singRIGHT', 'right0', 30, false);

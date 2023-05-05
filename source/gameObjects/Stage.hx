@@ -47,11 +47,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	
 	var jump1Array:Array<Int> = CoolUtil.numberArray(-2982, -3018);
 	var jump2Array:Array<Int> = CoolUtil.numberArray( -1260, -1344);
-	
-	var bfJumpBrick:Array<Int> = CoolUtil.numberArray(-5604, -5736);
+
 	var bfJumpGap1:Array<Int> = CoolUtil.numberArray(-3210, -3804);
 	var bfJumpGap2:Array<Int> = CoolUtil.numberArray(-1234, -1908);
-	var bfJumpPipe:Array<Int> = CoolUtil.numberArray(-700, -942);
 
 	var upperBoppers:FNFSprite;
 	var bottomBoppers:FNFSprite;
@@ -289,7 +287,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				backgroundsArray['popup'] = popup;
 				foreground.add(popup);
 				
-				chaseBG = new FNFSprite(-956.95 * 6, 50).loadGraphic(Paths.image('backgrounds/' + curStage + '/loop'), false, 160, 81);
+				chaseBG = new FNFSprite(-956.95 * 6, 0).loadGraphic(Paths.image('backgrounds/' + curStage + '/loop'), false, 160, 81);
 				chaseBG.scrollFactor.set(1, 1);
 				chaseBG.antialiasing = false;
 				chaseBG.setGraphicSize(Std.int(chaseBG.width * 6));
@@ -706,31 +704,18 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					
 					if (!pipeEnd)
 					{
-						for (i in 0...bfJumpBrick.length)
-						{
-							if (chaseBG.x == bfJumpBrick[i] && !jumpedBrick)
-							{
-								jumpedBrick = true;
-								legsBF.animation.play('jump'+legsPrefix, true);
-								FlxTween.tween(bfPos, { y: bfTarget.y }, 0.5, {ease: FlxEase.sineOut, onComplete: jumpFallBF});
-								FlxTween.tween(BFlegsPos, { y: BFlegsTarget.y }, 0.5, {ease: FlxEase.sineOut, onComplete: jumpFalllegsBF});
-								if (boyfriend.animation.curAnim.name == 'idle')
-									boyfriend.playAnim('jump', true);
-								boyfriend.isJumping = true;
-							}
-						}
+
 						
 						for (i in 0...bfJumpGap1.length)
 						{
 							if (chaseBG.x == bfJumpGap1[i] && !jumpedGap1)
 							{
 								jumpedGap1 = true;
-								legsBF.animation.play('jump'+legsPrefix, true);
-								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 6) }, 0.5, {ease: FlxEase.sineOut, onComplete: jumpFallBF});
-								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 6)}, 0.5, {ease: FlxEase.sineOut, onComplete: jumpFalllegsBF});
-								if (boyfriend.animation.curAnim.name == 'idle')
-									boyfriend.playAnim('jump', true);
-								boyfriend.isJumping = true;
+								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 6) }, 0.5, {ease: FlxEase.sineOut});
+								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 6)}, 0.5, {ease: FlxEase.sineOut});
+								boyfriend.flipY = true;
+								legsBF.flipY = true;
+							
 							}
 						}
 						
@@ -740,27 +725,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 							{
 								jumpedGap2 = true;
 								legsBF.animation.play('jump'+legsPrefix, true);
-								FlxTween.tween(bfPos, { y: (bfTarget.y + 25 * 6) }, 0.3, {ease: FlxEase.sineOut, onComplete: bfFallFast});
-								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 25 * 6)}, 0.3, {ease: FlxEase.sineOut, onComplete: legsFallFast});
-								if (boyfriend.animation.curAnim.name == 'idle')
-									boyfriend.playAnim('jump', true);
+
+								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 6) }, 0.0001, {ease: FlxEase.sineOut, onComplete: bfFallFast});
+								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 6)}, 0.0001, {ease: FlxEase.sineOut, onComplete: legsFallFast});
 								boyfriend.isJumping = true;
+								boyfriend.flipY = false;
+								legsBF.flipY = false;
 							}
 						}
 						
-						for (i in 0...bfJumpPipe.length)
-						{
-							if (chaseBG.x == bfJumpPipe[i] && !jumpedPipe)
-							{
-								jumpedPipe = true;
-								legsBF.animation.play('jump'+legsPrefix, true);
-								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 6) }, 0.3, {ease: FlxEase.sineOut, onComplete: bfFallFast});
-								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 6) }, 0.3, {ease: FlxEase.sineOut, onComplete: legsFallFast});
-								if (boyfriend.animation.curAnim.name == 'idle')
-									boyfriend.playAnim('jump', true);
-								boyfriend.isJumping = true;
-							}
-						}
+
 						
 						for (i in 0...jump1Array.length)
 						{
