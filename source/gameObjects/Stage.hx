@@ -633,8 +633,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 								jumped2 = false;
 								jumped1 = true;
 								legs.animation.play('jump', true);
-								FlxTween.tween(mxPos, { y: mxTarget.y }, 0.4, {ease: FlxEase.sineOut, onComplete: jumpFall});
-								FlxTween.tween(legsPos , { y: legsTarget.y }, 0.4, {ease: FlxEase.sineOut, onComplete: jumpFalllegs});
+								FlxTween.tween(mxPos, { y: mxTarget.y }, 0.4, {ease: FlxEase.sineOut});
+								FlxTween.tween(legsPos , { y: legsTarget.y }, 0.4, {ease: FlxEase.sineOut});
 
 								dadOpponent.isJumping = true;
 
