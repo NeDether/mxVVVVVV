@@ -712,7 +712,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 							{
 								jumpedGap1 = true;
 								FlxTween.tween(bfPos, { y: (bfTarget.y + 15 * 14) }, 0.5, {ease: FlxEase.sineOut});
-								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 13)}, 0.5, {ease: FlxEase.sineOut});
+								FlxTween.tween(BFlegsPos, { y: (BFlegsTarget.y + 15 * 14)}, 0.5, {ease: FlxEase.sineOut});
 								boyfriend.flipY = true;
 								legsBF.flipY = true;
 							
