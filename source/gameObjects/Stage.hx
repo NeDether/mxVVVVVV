@@ -635,9 +635,11 @@ class Stage extends FlxTypedGroup<FlxBasic>
 								legs.animation.play('jump', true);
 								FlxTween.tween(mxPos, { y: mxTarget.y }, 0.4, {ease: FlxEase.sineOut, onComplete: jumpFall});
 								FlxTween.tween(legsPos , { y: legsTarget.y }, 0.4, {ease: FlxEase.sineOut, onComplete: jumpFalllegs});
-								if (dadOpponent.animation.curAnim.name == 'idle')
-									dadOpponent.playAnim('jump', true);
+
 								dadOpponent.isJumping = true;
+
+								dadOpponent.flipY = true;
+								legs.flipY = true;
 							}
 						}
 						
@@ -648,12 +650,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 								jumped1 = false;
 								jumped2 = true;
 								legs.animation.play('jump', true);
-								FlxTween.tween(mxPos, { y: mxTarget.y }, 0.4, {ease: FlxEase.sineOut, onComplete: jumpFall});
-								FlxTween.tween(legsPos , { y: legsTarget.y }, 0.4, {ease: FlxEase.sineOut, onComplete: jumpFalllegs});
-								if (dadOpponent.animation.curAnim.name == 'idle')
-									dadOpponent.playAnim('jump', true);
+								FlxTween.tween(mxPos, { y: mxTarget.y },  0.0001, {ease: FlxEase.sineOut, onComplete: jumpFall});
+								FlxTween.tween(legsPos , { y: legsTarget.y }, 0.0001, {ease: FlxEase.sineOut, onComplete: jumpFalllegs});
+
 								dadOpponent.isJumping = true;
+
+								
+								dadOpponent.flipY = false;
+								legs.flipY = false;
 							}
+
 						}
 					}
 					
