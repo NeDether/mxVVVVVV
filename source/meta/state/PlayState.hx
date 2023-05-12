@@ -2246,7 +2246,7 @@ class PlayState extends MusicBeatState
 		{
 			FlxG.sound.play(Paths.sound('power_down'), 1);
 			powerupVisuals(boyfriend.animation.name);
-		}
+		} 
 	}
 
 	function decreaseCombo(?popMiss:Bool = false)
