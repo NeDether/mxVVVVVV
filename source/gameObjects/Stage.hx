@@ -720,7 +720,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				} else if (pipeEnd)
 				{
 					legsBF.visible = false;
-					boyfriend.x -= (22 * 6) * elapsed * moveMult;
+					boyfriend.y -= (746 * 6) * elapsed * moveMult;
+					boyfriend.x -= (34 * 6) * elapsed * moveMult;
+					boyfriend.flipY = true;
 				}
 		}
 	}
