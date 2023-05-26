@@ -571,6 +571,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 							endingPipe.setGraphicSize(Std.int(endingPipe.width * 6));
 							endingPipe.updateHitbox();
 							backgroundsArray['pipe'] = endingPipe;
+							endingPipe.visible = true;
 							foreground.add(endingPipe);
 							pipeEnd = true;
 						}
