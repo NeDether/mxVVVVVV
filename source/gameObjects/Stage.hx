@@ -744,6 +744,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			backgroundsArray['bg'].visible = false;
 			chaseBG.visible = false;
 			backgroundsArray['wall'].visible = true;
+
+
 		}
 		else
 		{
