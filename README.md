@@ -1,4 +1,5 @@
-this is specifically made for a fnf vip
+# this is specifically made for a fnf vip
+# any use of this code doesnt need to be credited
 
 
 
