@@ -18,8 +18,9 @@ VvvvvaVvvvvvr Discord
 
 SiIvaGunner
 
+The FNF Team
 
-
+The Devs of SMB Funk Mix and its Expansion
 
 # [Forever Engine](https://github.com/Yoshubs/FunkinForever)
 An open-source, modular, optimized, and HOPEFULLY easy to use [Friday Night Funkin'](https://www.newgrounds.com/portal/view/770371) mod engine!
