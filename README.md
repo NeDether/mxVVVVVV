@@ -1,6 +1,24 @@
 # this is specifically made for a fnf vip
 # any use of this code doesnt need to be credited
 
+# This Vip is made by
+
+[SaadTheDrip](https://www.youtube.com/channel/UCBM--Lmf6TJWKq4s_XHyNEQ): Audio, Some Visuals, Chart, Voice Actor for Viridian
+
+[DeNether/Supes](https://www.youtube.com/@denether): Art
+
+# Special Thanks to
+
+
+VVVVVV Devs
+
+Entire VvvvvaVvvvvvr Team
+
+VvvvvaVvvvvvr Discord
+
+SiIvaGunner
+
+
 
 
 # [Forever Engine](https://github.com/Yoshubs/FunkinForever)
