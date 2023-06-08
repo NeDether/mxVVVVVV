@@ -564,17 +564,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 						if (backgroundsArray['flagPole'] != null)
 							backgroundsArray['flagPole'].kill();
 						if (curStep > 2317)
-						{
-							var endingPipe:FNFSprite = new FNFSprite(0, 0).loadGraphic(Paths.image('backgrounds/' + curStage + '/endpipe'), false, 160, 81);
-							endingPipe.scrollFactor.set(1, 1);
-							endingPipe.antialiasing = false;
-							endingPipe.setGraphicSize(Std.int(endingPipe.width * 6));
-							endingPipe.updateHitbox();
-							backgroundsArray['pipe'] = endingPipe;
-							endingPipe.visible = true;
-							foreground.add(endingPipe);
-							pipeEnd = true;
-						}
+							{
+								var endingPipe:FNFSprite = new FNFSprite(0, 0).loadGraphic(Paths.image('backgrounds/' + curStage + '/endpipe'), false, 160, 81);
+								endingPipe.scrollFactor.set(1, 1);
+								endingPipe.antialiasing = false;
+								endingPipe.setGraphicSize(Std.int(endingPipe.width * 6));
+								endingPipe.updateHitbox();
+								backgroundsArray['pipe'] = endingPipe;
+								foreground.add(endingPipe);
+								pipeEnd = true;
+							}
 						jumpedBrick = false;
 						jumpedGap1 = false;
 						jumpedGap2 = false;
@@ -722,6 +721,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				{
 					legsBF.visible = false;
 					boyfriend.x -= (22 * 6) * elapsed * moveMult;
+					boyfriend.visible = false;
 				}
 		}
 	}
