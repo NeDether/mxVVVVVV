@@ -5,7 +5,7 @@
 
 [SaadTheDrip](https://www.youtube.com/channel/UCBM--Lmf6TJWKq4s_XHyNEQ): Audio, Some Visuals, Chart, Voice Actor for Viridian, Coding
 
-[DeNether/Supes](https://www.youtube.com/@denether): Art
+[DeNether](https://www.youtube.com/@denether): Art
 
 # Special Thanks to
 
