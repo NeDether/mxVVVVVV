@@ -22,6 +22,20 @@ The FNF Team
 
 The Devs of SMB Funk Mix and its Expansion
 
+# Trivia or someting (dont tell vavr about this)
+
+This takes place in a vipped copy of vvvvvv
+
+Vavr.jpeg as the ability to shape shift into multiple Vavr Memes
+
+Vavr.jpeg is a mixture of Vavr and Green Monika Takeover
+
+Viridian's Forum was rocked
+
+Viridian thought Vavr.jpeg was another Villi that was trapped in Dimension VVVVVV
+
+Vavr.jpeg has the ability to jump and to flip gravity
+
 # [Forever Engine](https://github.com/Yoshubs/FunkinForever)
 An open-source, modular, optimized, and HOPEFULLY easy to use [Friday Night Funkin'](https://www.newgrounds.com/portal/view/770371) mod engine!
 ----------------------------------------------
