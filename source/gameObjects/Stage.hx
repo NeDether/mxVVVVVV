@@ -723,7 +723,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					boyfriend.x -= (22 * 6) * elapsed * moveMult;
 					boyfriend.visible = false;
 
-					FlxG.camera.flash(FlxColor.WHITE, 1);
+
 				}
 		}
 	}

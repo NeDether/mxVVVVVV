@@ -2660,6 +2660,7 @@ class PlayState extends MusicBeatState
 				disableControls = true;
 				depressStrums();
 				boyfriend.y -= 4*6;
+				FlxG.camera.flash(FlxColor.WHITE, 1);
 			}
 		}
 		
